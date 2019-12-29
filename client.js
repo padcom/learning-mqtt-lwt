@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const mqtt = require('mqtt').connect('mqtt://127.0.0.1', {
-  codec: 'raw',
   keepalive: 1,
   will: { topic: 'client-001/status', payload: 'offline' }
 })

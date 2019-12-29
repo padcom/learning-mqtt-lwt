@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const mqtt = require('mqtt').connect('mqtt://127.0.0.1', { codec: 'raw' })
+const mqtt = require('mqtt').connect('mqtt://127.0.0.1')
 
 mqtt.on('message', (topic, value) => {
   console.log(topic, value.toString())
